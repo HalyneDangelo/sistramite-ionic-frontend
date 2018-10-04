@@ -1,0 +1,7 @@
+{
+  "name": "SisTramite-Ionic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
