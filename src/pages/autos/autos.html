@@ -13,7 +13,7 @@
 <ion-content padding>
   <ion-list inset>
     <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
-      {{ item.numero }}
+      {{ item.numero }} - {{ item.autuado.nomeFantasia }}
     </button> 
   </ion-list>
 </ion-content>
