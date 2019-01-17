@@ -13,12 +13,6 @@ export class UsuarioService {
     }
     findByEmail(email: string) : Observable<UsuarioDTO> {
 
-        let token = this.storage.getLocalUser().token;
-        let authHeader = new HttpHeaders({'Authorization': 'Bearer ' + token});
-        let semail="halyne.dangelo@gmail.com";
-
-        return this.http.get<UsuarioDTO>(
-            `${API_CONFIG.baseUrl}/usuarios/login?value=${email}`,
-            {'headers': authHeader});
+        return this.http.get<UsuarioDTO>(`${API_CONFIG.baseUrl}/usuarios/login?value=${email}`);
     }
 }
